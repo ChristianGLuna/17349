@@ -1,0 +1,18 @@
+<script>
+    // js
+    export let texto = 'Botón';
+    export let color = 'yellow';
+</script>
+
+<!-- html -->
+<button style="--btn-color: {color};">
+    {texto}
+</button>
+
+<style>
+    /* css */
+    button {
+        color: white;
+        background-color: var(--btn-color);
+    }
+</style>
