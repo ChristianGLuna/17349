@@ -9,7 +9,8 @@ import jakarta.persistence.Id;
 public class Saludadores {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    // @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // pq no deja por la base
     private Integer id;
     public Integer getId() {
         return id;
